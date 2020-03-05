@@ -792,6 +792,10 @@ std::vector<Option> get_global_options() {
     Option("plugin_crypto_accelerator", Option::TYPE_STR, Option::LEVEL_ADVANCED)
     .set_default("crypto_isal")
     .set_description("Crypto accelerator library to use"),
+    
+    Option("openssl_accel_engine", Option::TYPE_STR, Option::LEVEL_ADVANCED)
+    .set_default("none")
+    .set_description("Openssl engine to use"),
 
     Option("mempool_debug", Option::TYPE_BOOL, Option::LEVEL_DEV)
     .set_default(false)
